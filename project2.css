@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  min-height: 10vh;
+  flex-wrap: wrap;
+  position: sticky;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: all 0.3s ease-in;
+}
+
+.dynamicHeader {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.dynamicHeader a {
+  color: white;
+}
+
+div.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 6;
+}
+
+div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+
+div.logo h1 {
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+header nav {
+  flex-grow: 4;
+  flex-basis: 450px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #48a4a4;
+}
+
+nav ul li a:focus {
+  outline: solid;
+}
+
+header nav ul li a img {
+  width: 2rem;
+  height: 2rem;
+}
+
+section.imageSection {
+  background: url(./Pictures/pexels-photo-416676.jpeg);
+  min-height: 90vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section div.blackFront {
+  background-color: rgb(112, 112, 112, 0.4);
+  min-height: 90vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  margin: 3rem;
+}
+
+section.imageSection a {
+  color: white;
+  padding: 2rem 3rem;
+  background-color: #20c4e8;
+  border-radius: 1.5rem;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+section.imageSection a:focus {
+  outline: solid;
+  outline-color: orange;
+}
+
+/*Second Section Part*/
+
+/*Div cards*/
+
+section.secondPart h3 {
+  font-weight: normal;
+  font-size: 3.1rem;
+  padding: 1rem;
+}
+
+section.secondPart {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 4rem;
+  min-height: 100vh;
+}
+
+section.secondPart div.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*3pic*/
+
+section.secondPart div.cards .card {
+  flex-grow: 1;
+  margin: 3rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 20rem;
+}
+
+section.secondPart div.cards .card h5 {
+  font-size: 2.7rem;
+  font-weight: normal;
+}
+
+/*Third Part*/
+
+section.thirdPart {
+  display: flex;
+  height: 100vh;
+}
+
+section.thirdPart div.left {
+  background-color: #7dc8e4;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 6;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5rem;
+}
+
+section.thirdPart div.intro {
+  height: 30rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+section.thirdPart div.intro h1 {
+  font-size: 4rem;
+}
+
+section.thirdPart div.intro p {
+  font-size: 1.5rem;
+}
+
+section.thirdPart div.left {
+  background-color: #7dc8e4;
+  color: white;
+}
+
+section.thirdPart div.left a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #0f697d;
+  font-size: 3rem;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  align-self: center;
+}
+
+section.thirdPart img {
+  object-fit: cover;
+}
+
+/*Fourth Part*/
+
+section.fourthPart {
+  background-color: #c4bfbf;
+  display: flex;
+  height: 45vh;
+  flex-direction: column;
+}
+
+section.fourthPart div.logo_fourth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+section.fourthPart div.logo_fourth h1 {
+  font-size: 2.5rem;
+}
+
+section.fourthPart div.logo_fourth img {
+  width: 5rem;
+  height: 5rem;
+}
+
+section.fourthPart nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section.fourthPart nav ul li {
+  margin: 0rem 1.75rem;
+}
+
+section.fourthPart nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+section.fourthPart div.socialmedia ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+section.fourthPart div.socialmedia ul li {
+  margin: 0 2.25rem;
+}
+
+section.fourthPart div.socialmedia ul a {
+  text-decoration: none;
+}
+
+section.fourthPart div.socialmedia ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+section.fourthPart div.socialmedia img {
+  width: 3rem;
+  height: 3rem;
+}
+
+section.fourthPart p {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/*media screen part (RWD)*/
+
+@media screen and (max-width: 1302px) {
+  section.thirdPart {
+    flex-direction: column;
+  }
+  section.thirdPart div.left div.intro h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  header nav {
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    justify-content: space-around;
+  }
+  header div.logo {
+    justify-content: center;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  section.thirdPart div.left div.intro h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav ul li {
+    font-size: 1rem;
+  }
+  section.imageSection h2 {
+    margin-top: 50%;
+    font-size: 3rem;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  section.imageSection h2 {
+    font-size: 2rem;
+  }
+  section.imageSection a {
+    font-size: 1rem;
+  }
+  section.secondPart h3 {
+    width: 100%;
+    font-size: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  section.secondPart {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  section.secondPart div.cards .card {
+    margin: 0;
+    align-items: center;
+  }
+  section.secondPart div.cards .card img {
+    width: 40%;
+    height: 40%;
+  }
+
+  section.secondPart div.cards .card p {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+
+  header {
+    padding: 0;
+  }
+  div.logo h1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section.thirdPart div.left div.intro h1 {
+    font-size: 1.25rem;
+  }
+  section.thirdPart div.intro p {
+    font-size: 1rem;
+  }
+  section.thirdPart div.left a {
+    font-size: 1rem;
+  }
+  section.thirdPart img {
+    width: 100vw;
+    height: 100vw;
+  }
+}
+
+section.form {
+  height: 50vh;
+}
